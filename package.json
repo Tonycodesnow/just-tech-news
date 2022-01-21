@@ -4,7 +4,8 @@
   "description": "The back end for A completely full-stack application, Just Tech News—a tech news website where users can post, upvote, and comment on links to news articles. Sequelize, an object-relational mapping (ORM) library, to simplify MySQL queries, add password hashing so that users can create secure passwords, and connect application to JawsDB, a MySQL add-on for Heroku.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "seeds": "node seeds/index.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,8 @@
     "bcrypt": "^5.0.1",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "express-handlebars": "^6.0.2",
+    "handlebars": "^4.7.7",
     "mysql2": "^2.3.2",
     "sequelize": "^6.9.0"
   }
